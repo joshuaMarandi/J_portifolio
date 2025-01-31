@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sss", $name, $description, $target_file);
     $stmt->execute();
-    
+    //header vodes
     header("Location: home.php");
     exit();
 }
